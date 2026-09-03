@@ -1,3 +1,4 @@
+// DOM -> Document Object Model
 import { EventEmitter } from "events";
 
 const button = new EventEmitter();
