@@ -1,20 +1,21 @@
 import http from 'http';
+import { getusers } from "./users.js";
 
 const server = http.createServer((req, res) => {
-  if (req.url === '/api/users',req.method === 'GET') {
-    res.end(JSON.stringify({msg: "all users" }));
+  if (req.url === '/api/users' && req.method === 'GET') {
+    res.end(JSON.stringify(getusers()));
   }
 
-  else if (req.url === '/api/users',req.method === 'POST') {
+  else if (req.url === '/api/users' && req.method === 'POST') {
     res.end(JSON.stringify({msg: "add users" }));
   }
-  else if (req.url === '/api/users',req.method === 'PUT') {
+  else if (req.url === '/api/users' && req.method === 'PUT') {
     res.end(JSON.stringify({msg: "single users with id i" }));
   }
-  else if (req.url === '/api/users',req.method === 'DELETE') {
+  else if (req.url === '/api/users' && req.method === 'DELETE') {
     res.end(JSON.stringify({msg: "update user 1" }));
   }
-  else if (req.url === '/api/users',req.method === 'PATCH') {
+  else if (req.url === '/api/users' && req.method === 'PATCH') {
     res.end(JSON.stringify({msg: "remove 1" }));
   }
   else {
