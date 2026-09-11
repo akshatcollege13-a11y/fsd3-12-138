@@ -17,6 +17,12 @@ const server = http.createServer((req, res) => {
       qty: 1,
       discount: 25,
     },
+    {
+      name:"Boat Buds",
+      price:5000,
+      qty:1,
+      discount:25,  
+    }
   ];
   res.end(JSON.stringify(product));
 });
