@@ -1,7 +1,9 @@
-// WE USE IN MEM0RY DATABSE
+// we use in memory database
 let users = [
-    {id: 1, name: "akshat", mobile: "1234567890", email: "akshat@example.com"},
-    {id: 2, name: "aditya", mobile: "0987654321", email: "aditya@example.com"}
-];
+    {id:1,name:'Amit Sharma',mob:'98345xxxxx',email:'amit.example@exam.com'},
+    {id:2,name:'Monika Verma',mob:'92345xxxxx',email:'moni.example@exam.com'},
+]
+
 let nextId = 3;
-export const getusers = () => users;
+
+export const getUsers = () => users;
